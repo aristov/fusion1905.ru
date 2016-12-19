@@ -10,15 +10,10 @@
 {
     text-decoration: none;
 }
-:link:not(:hover):not(:focus),
+/*:link:not(:hover):not(:focus),
 :visited:not(:hover):not(:focus)
 {
     opacity: 0.7;
-}
-/*:link[rel~=external],
-:visited[rel~=external]
-{
-    color: rgba(174, 203, 157, 1);
 }*/
 html, body
 {
@@ -121,6 +116,11 @@ body > header > nav > ul > li > :visited
     position: relative;
     padding: 13px 0 13px 60px;
     line-height: normal;
+}
+body > header > nav > ul > li > :link:not(:hover):not(:focus),
+body > header > nav > ul > li > :visited:not(:hover):not(:focus)
+{
+    opacity: 0.7;
 }
 body > header .fa
 {
@@ -251,7 +251,7 @@ address.adr sup
 {
     font-size: 16px;
 }
-address.adr .pathmap
+address.adr #pathmap
 {
     height: 720px;
     background: rgba(255, 255, 255, 0.85);
@@ -259,7 +259,7 @@ address.adr .pathmap
     margin-top: 20px;
     transition: opacity 250ms ease;
 }
-address.adr .pathmap:not(:hover)
+address.adr #pathmap:not(:hover)
 {
     opacity: 0.3;
 }
@@ -289,14 +289,17 @@ body > footer small.worktime > span
 body > footer small.worktime .fa
 {
     margin-right: 10px;
+    display: none;
+}
+body > footer small.worktime sup
+{
+    position: absolute;
+    margin-top: -4px;
+    opacity: 0.7;
 }
 body > footer small.worktime:not(:hover) sup
 {
     opacity: 0;
-}
-body > footer small.worktime sup
-{
-    opacity: 0.7;
 }
 body > footer address
 {
