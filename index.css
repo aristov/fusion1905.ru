@@ -3,18 +3,13 @@
 {
     color: #88b7db;
 }
-:link:not(:hover):not(:focus),
 :link[href^="#"],
-:visited:not(:hover):not(:focus),
-:visited[href^="#"]
+:link:not(:hover):not(:focus),
+:visited[href^="#"],
+:visited:not(:hover):not(:focus)
 {
     text-decoration: none;
 }
-/*:link:not(:hover):not(:focus),
-:visited:not(:hover):not(:focus)
-{
-    opacity: 0.7;
-}*/
 html, body
 {
     height: 100%;
@@ -28,18 +23,6 @@ body
     max-width: 1000px;
     margin: auto;
     background: rgba(0, 0, 0, 0.9);
-}
-body::before
-{
-    content: '';
-    background: url(https://pp.vk.me/c630431/v630431762/4d6ba/H8uH_TMSVrA.jpg) no-repeat 50% 50% / cover;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.1;
-    z-index: -1;
 }
 h1, h2
 {
@@ -59,22 +42,21 @@ ul
 {
     list-style: circle;
 }
-p:not(:hover),
-ul:not(:hover)
-{
-    opacity: 0.7;
-}
-.nowrap
-{
-    white-space: nowrap;
-}
-.dim:not(:hover):not(:focus)
-{
-    opacity: 0.7;
-}
 
 /*================================================================*/
 
+body::before
+{
+    content: '';
+    background: url(https://pp.vk.me/c630431/v630431762/4d6ba/H8uH_TMSVrA.jpg) no-repeat 50% 50% / cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+    z-index: -1;
+}
 body > header
 {
     font-size: 15px;
@@ -153,20 +135,25 @@ body > header .fa-vk
 
 /*================================================================*/
 
-img#mainphoto
+body > main img#mainphoto
 {
     float: right;
     box-shadow: 0 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin: 0 0 20px 20px;
     position: relative;
     z-index: 1;
-    transition: opacity 250ms ease;
+    transition: opacity 300ms ease;
 }
-img#mainphoto:not(:hover)
+body > main img#mainphoto:not(:hover)
 {
     opacity: 0.6;
 }
-sup.sqr
+body > main p,
+body > main ul
+{
+    opacity: 0.7;
+}
+body > main sup.sqr
 {
     font-size: 10px;
     margin: -5px 2px 0;
@@ -187,7 +174,7 @@ address.tel ul
 }
 address.tel ul > li
 {
-    transition: transform 250ms ease 250ms;
+    transition: transform 300ms ease 500ms;
     outline: none;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
     font-style: normal;
@@ -208,12 +195,11 @@ address.tel ul > li:hover
 }
 address.tel ul > li::first-letter
 {
-    color: rgba(255, 255, 255, 0.5);
     font-weight: normal;
 }
-address.tel ul > li:hover::first-letter
+address.tel ul > li:not(:hover)::first-letter
 {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /*================================================================*/
@@ -234,7 +220,7 @@ address.adr figure > figcaption a
     line-height: 60px;
     display: inline-block;
     margin: 20px;
-    transition: transform 250ms ease 250ms;
+    transition: transform 300ms ease 500ms;
 }
 address.adr figure > figcaption a:not(:hover):not(:focus)
 {
@@ -257,7 +243,7 @@ address.adr #pathmap
     background: rgba(255, 255, 255, 0.85);
     position: relative;
     margin-top: 20px;
-    transition: opacity 250ms ease;
+    transition: opacity 300ms ease;
 }
 address.adr #pathmap:not(:hover)
 {
