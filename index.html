@@ -6,18 +6,26 @@
 <title>Студия «Фьюжн»</title>
 <link rel=stylesheet href=index.css>
 <header>
-    <a href="" title="Музыкальная студия «Фьюжн»"><img alt="Fusion studio" src=media/fusionlogo.png width=136 height=60></a>
+    <a href="" title="Музыкальная студия «Фьюжн»" id=logo>
+        <img alt="Fusion studio" src=media/fusionlogo.png width=136 height=60>
+    </a>
     <nav>
         <ul>
-            <li><a href=#tel>+7 916 56 808 56
-                <wbr>
-                +7 926 602 25 87</a></li>
-            <li><a href=#adr>2-я Звенигородская
-                <wbr>
-                дом 13, стр 17</a></li>
-            <li><a href=https://vk.com/bazafusion rel=external target=_blank>Сообщество
-                <wbr>
-                музыкантов</a></li>
+            <li><a href=#tel>
+                <span class="fa fa-phone"></span>
+                +7 916 56 808 56
+                <div>+7 926 602 25 87</div>
+            </a></li>
+            <li><a href=#adr>
+                <span class="fa fa-map"></span>
+                2-я Звенигородская
+                <div>дом 13, стр 17</div>
+            </a></li>
+            <li><a href=https://vk.com/bazafusion rel=external target=_blank>
+                <span class="fa fa-vk"></span>
+                Сообщество
+                <div>музыкантов</div>
+            </a></li>
         </ul>
     </nav>
 </header>
@@ -27,14 +35,14 @@
          alt="Случайное фото"
          title="Жизнь студии"
          width=500
-         height=500>
-    <p>Уютная студия на втором этаже заводского лофта, недалеко от станции
-        <strong>метро «Улица 1905 года»</strong></p>
+         height=500
+         id=mainphoto>
+    <p>Уютная студия на втором этаже заводского лофта, недалеко от станции <strong>метро «Улица 1905 года»</strong></p>
     <h2>Место</h2>
     <ul>
-        <li>3 зала для репетиций <b>25-30 м<sup>2</sup></b></li>
-        <li>Концертный зал с окном <b>50 м<sup>2</sup></b></li>
-        <li>Малый зал для занятий <b>20 м<sup>2</sup></b></li>
+        <li>3 зала для репетиций <b>25-30 м<sup class=sqr>2</sup></b></li>
+        <li>Концертный зал с окном <b>50 м<sup class=sqr>2</sup></b></li>
+        <li>Малый зал для занятий <b>20 м<sup class=sqr>2</sup></b></li>
     </ul>
     <h2>Возможности</h2>
     <ul>
@@ -67,41 +75,45 @@
         <b>Shure</b>, <b>Sonor</b>, <b>Soundcraft</b>, <b>VOX</b>, <b>Yamaha</b>
         и всякие другие классные штуки!</p>
     <h1 id=tel>Связь</h1>
-    <address>
+    <address class=tel>
         <ul title="Свяжитесь с нами по одному из этих номеров и узнайте больше о студии">
             <li><strong>+7 916 56 808 56</strong></li>
             <li><strong>+7 926 602 25 87</strong></li>
         </ul>
     </address>
     <h1 id=adr>Путь</h1>
-    <address>
+    <address class=adr>
         <p>Мы располагаемся в <b>Москве</b>, недалеко от станции <b>метро «Улица 1905 года»</b>.
             Удобнее выходить у последнего вагона из центра. Из выхода в подземный переход,
             перейти перекресток по диагонали и идти вдоль Звенигородского шоссе в сторону области до
-            <b>2-й Звенигородской улицы</b>, перейти догогу, затем свернуть налево, пройти ~100м,
+            <b>2-й Звенигородской улицы</b>, перейти догогу, затем свернуть налево, пройти ≈100м,
             рядом с магазином «Пятерочка» металлические ворота со шлагбаумом и калиткой — зайти в нее,
             обойти 15-е строение слева, и снова в калитку — слева будет <b>вход в кафе с вывеской «PH &amp; B»</b>.
             Студия находится на втором этаже здания в конце коридора.</p>
         <figure>
             <figcaption>
-                <a href="https://yandex.ru/maps/-/CZHeYA0i" rel=external target=_blank>
+                <a href=https://yandex.ru/maps/-/CZHeYA0i rel=external target=_blank>
                     Москва, <b>2</b>-я Звенигородская <b>13</b> <sup>строение <b>17</b></sup>
                 </a>
             </figcaption>
-            <script type=text/javascript
-                    charset=utf-8
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=4L2HMAQC2mYDutWIKsc2LAD98hZTzzSe&amp;width=1000&amp;height=720&amp;lang=ru_RU&amp;sourceType=mymaps&amp;scroll=true"
-                    async></script>
+            <div class=pathmap>
+                <script type=text/javascript
+                        charset=utf-8
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=4L2HMAQC2mYDutWIKsc2LAD98hZTzzSe&amp;width=1000&amp;height=720&amp;lang=ru_RU&amp;sourceType=mymaps&amp;scroll=true"
+                        async></script>
+            </div>
         </figure>
     </address>
 </main>
 <footer>
-    <small title="Мы работаем ежедневно с девяти утра до двенадцати ночи">
-        <span>7 / 7</span>
-        <time datetime=09:00>9</time> — <time datetime=00:00>24</time><sup>±</sup>
+    <small title="Мы работаем ежедневно с девяти утра до двенадцати ночи" class=worktime>
+        <span class="fa fa-calendar"></span><span>7 / 7</span
+        ><span class="fa fa-clock-o"></span><time datetime=09:00>9</time> — <time datetime=00:00>24</time><sup>±</sup>
     </small>
     <address>
-        <small>©<time>2016</time><a rel="author" href=mailto:vv.aristov@gmail.com>студия «Фьюжн»</a></small>
+        <small>©
+            <time>2016</time>
+            <a rel="author" href=mailto:vv.aristov@gmail.com>студия «Фьюжн»</a></small>
     </address>
 </footer>
 <script src=https://use.fontawesome.com/84f48aa2e0.js></script>
