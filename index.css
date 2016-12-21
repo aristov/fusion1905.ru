@@ -48,6 +48,9 @@ ul
 body::before
 {
     content: '';
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
     position: fixed;
     top: 0;
     right: 0;
