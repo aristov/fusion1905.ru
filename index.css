@@ -48,7 +48,6 @@ ul
 body::before
 {
     content: '';
-    background: url(https://pp.vk.me/c630431/v630431762/4d6ba/H8uH_TMSVrA.jpg) no-repeat 50% 50% / cover;
     position: fixed;
     top: 0;
     right: 0;
