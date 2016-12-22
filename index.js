@@ -46,3 +46,12 @@
     style.innerText = `body::before { background-image: url(${ url }) }`
     document.head.appendChild(style)
 }
+
+{
+    const body = document.body;
+    const logo = document.getElementById('logo')
+    if(logo) {
+        logo.onmouseover = () => body.classList.add('preview')
+        logo.onmouseout = () => body.classList.remove('preview')
+    }
+}

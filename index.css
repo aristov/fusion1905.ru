@@ -59,6 +59,19 @@ body::before
     opacity: 0.1;
     z-index: -1;
 }
+body > main,
+body::before
+{
+    transition: opacity 700ms ease 300ms;
+}
+body.preview > main
+{
+    opacity: 0;
+}
+body.preview::before
+{
+    opacity: 1;
+}
 body > header
 {
     font-size: 15px;
