@@ -148,7 +148,7 @@ body > main img#mainphoto
 }
 body > main img#mainphoto:not(:hover)
 {
-    opacity: 0.6;
+    opacity: 0.9;
 }
 body > main p,
 body > main ul
