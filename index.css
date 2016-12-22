@@ -72,6 +72,9 @@ body.preview::before
 {
     opacity: 1;
 }
+
+/*================================================================*/
+
 body > header
 {
     font-size: 15px;
@@ -235,16 +238,17 @@ address.adr figure > figcaption a
     line-height: 60px;
     display: inline-block;
     margin: 20px;
+    text-decoration: none;
     transition: transform 300ms ease 500ms;
 }
-address.adr figure > figcaption a:not(:hover):not(:focus)
+address.adr figure > figcaption a:not(:focus):not(:hover)
 {
     color: rgba(174, 203, 157, 1);
     opacity: 0.9;
 }
+address.adr figure > figcaption a:focus,
 address.adr figure > figcaption a:hover
 {
-    text-decoration: none;
     color: white;
     transform: scale(1.2, 1.2);
 }
