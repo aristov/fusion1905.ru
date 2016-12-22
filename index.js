@@ -14,7 +14,6 @@
         'https://pp.vk.me/c624430/v624430762/43f38/0C1MjVTpaPA.jpg',
         'https://pp.vk.me/c626927/v626927762/24f57/03-W9xjtNso.jpg',
         'https://pp.vk.me/c630431/v630431762/4d8d8/JB5gWRX5C4o.jpg',
-        'https://pp.vk.me/c636029/v636029762/2b824/KFj5cLrwWqg.jpg',
         'https://pp.vk.me/c624430/v624430762/43f5b/1F2tOhwr82Y.jpg',
     ]
     const random = Math.floor(Math.random() * 100 % urlmap.length)
