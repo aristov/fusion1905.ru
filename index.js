@@ -19,11 +19,11 @@
     const random = Math.floor(Math.random() * 100 % urlmap.length)
     const url = urlmap[random]
     const image = document.getElementById('mainphoto')
-    if(image) image.src = url;
+    if(image) image.src = url
 }
 
 {
-    const style = document.createElement('style');
+    const style = document.createElement('style')
     const urlmap = [
         'https://pp.vk.me/c630431/v630431762/4d6ba/H8uH_TMSVrA.jpg',
         'https://pp.vk.me/c630119/v630119762/4f88b/HuiiHuD7hdY.jpg',
@@ -43,15 +43,17 @@
     ]
     const random = Math.floor(Math.random() * 100 % urlmap.length)
     const url = urlmap[random]
-    style.innerText = `body::before { background-image: url(${ url }) }`
+    style.textContent = `body::before { background-image: url(${ url }) }`
     document.head.appendChild(style)
 }
 
 {
-    const body = document.body;
+    const body = document.body
     const logo = document.getElementById('logo')
     if(logo) {
         logo.onmouseover = () => body.classList.add('preview')
+        logo.onfocus = () => body.classList.add('preview')
         logo.onmouseout = () => body.classList.remove('preview')
+        logo.onblur = () => body.classList.remove('preview')
     }
 }
