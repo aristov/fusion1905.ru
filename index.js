@@ -1,8 +1,9 @@
 {
     const pathmap = document.getElementById('pathmap')
     window.onscroll = () => {
-        const halfscreen = window.scrollY + window.innerHeight / 2
-        pathmap.style.opacity = Number(pathmap.offsetTop < halfscreen) || null
+        const screenbottom = window.scrollY + window.innerHeight
+        pathmap.style.opacity =
+            Number(pathmap.offsetTop + pathmap.clientHeight / 3 < screenbottom) || null
     }
 }
 
@@ -20,6 +21,9 @@
     const url = urlmap[random]
     const image = document.getElementById('mainphoto')
     if(image) image.src = url
+    const resize = () => image.height = image.width
+    window.onresize = resize
+    resize()
 }
 
 {
@@ -40,6 +44,7 @@
         'https://pp.vk.me/c630626/v630626566/1aed8/lKmjB_4QWmo.jpg',
         'https://pp.vk.me/c626128/v626128762/3b35d/-pha-dvzI30.jpg',
         'https://pp.vk.me/c631528/v631528762/356a4/w7Ue-lZ8QBA.jpg',
+        'https://pp.vk.me/c637322/v637322566/2b247/XW_yTuXt47E.jpg',
     ]
     const random = Math.floor(Math.random() * 100 % urlmap.length)
     const url = urlmap[random]
