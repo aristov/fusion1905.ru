@@ -104,6 +104,11 @@ body > header > nav > ul > li
 {
     display: inline-block;
     margin-left: 26px;
+    vertical-align: top;
+}
+body > header > nav > ul > li > a[href="#tel"]
+{
+    font-size: 30px;
 }
 body > header > nav > ul > li > :link,
 body > header > nav > ul > li > :visited
