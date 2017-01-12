@@ -182,12 +182,16 @@ body > main sup.sqr
 
 /*================================================================*/
 
+address.tel
+{
+    font-style: normal;
+}
 address.tel ul
 {
     display: flex;
     justify-content: space-around;
     line-height: 60px;
-    font-size: 30px;
+    font-size: 60px;
     list-style: none;
     padding: 0;
     opacity: 1;
@@ -197,7 +201,6 @@ address.tel ul > li
     transition: transform 300ms ease 500ms;
     outline: none;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
-    font-style: normal;
     letter-spacing: 5px;
 }
 address.tel ul > li > strong

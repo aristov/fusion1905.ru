@@ -58,9 +58,13 @@
         const logo = document.getElementById('logo')
         if(logo) {
             logo.onmouseover = () => body.classList.add('preview')
-            logo.onfocus = () => body.classList.add('preview')
             logo.onmouseout = () => body.classList.remove('preview')
-            logo.onblur = () => body.classList.remove('preview')
+            logo.onkeydown = event => {
+                if(event.key === ' ') {
+                    body.classList.toggle('preview')
+                    event.preventDefault()
+                }
+            }
         }
     }
 
