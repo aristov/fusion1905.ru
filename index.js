@@ -2,7 +2,7 @@
     const randomizer = arr => arr[Math.floor(Math.random() * 100 % arr.length)]
 
     {
-        const pathmap = document.getElementById('pathmap')
+        const pathmap = window.pathmap
         window.onscroll = () => {
             const screenbottom = window.scrollY + window.innerHeight
             pathmap.style.opacity =
@@ -20,16 +20,16 @@
             'https://pp.vk.me/c630431/v630431762/4d8d8/JB5gWRX5C4o.jpg',
             'https://pp.vk.me/c624430/v624430762/43f5b/1F2tOhwr82Y.jpg',
         ]
-        const image = document.getElementById('mainphoto')
-        if(image) image.src = randomizer(urlmap)
+        const mainphoto = window.mainphoto
+        if(mainphoto) mainphoto.src = randomizer(urlmap)
         window.onresize = function onresize() {
-            image.height = image.width
+            mainphoto.height = mainphoto.width
         }
         onresize()
     }
 
     {
-        const style = document.createElement('style')
+        const stylenode = document.createElement('style')
         const urlmap = [
             'https://pp.vk.me/c630431/v630431762/4d6ba/H8uH_TMSVrA.jpg',
             'https://pp.vk.me/c630119/v630119762/4f88b/HuiiHuD7hdY.jpg',
@@ -49,13 +49,13 @@
             'https://pp.vk.me/c637322/v637322566/2b247/XW_yTuXt47E.jpg',
         ]
         const url = randomizer(urlmap)
-        style.textContent = `body::before { background-image: url(${ url }) }`
-        document.head.appendChild(style)
+        stylenode.textContent = `body::before { background-image: url(${ url }) }`
+        document.head.appendChild(stylenode)
     }
 
     {
         const body = document.body
-        const logo = document.getElementById('logo')
+        const logo = window.logo
         if(logo) {
             logo.onmouseover = () => body.classList.add('preview')
             logo.onmouseout = () => body.classList.remove('preview')
