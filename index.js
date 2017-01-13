@@ -2,11 +2,11 @@
     const randomizer = arr => arr[Math.floor(Math.random() * 100 % arr.length)]
 
     {
-        const pathmap = window.pathmap
+        const pathmap = document.getElementById('pathmap')
         window.onscroll = () => {
             const screenbottom = window.scrollY + window.innerHeight
             pathmap.style.opacity =
-                Number(pathmap.offsetTop + pathmap.clientHeight / 3 < screenbottom) || null
+                Number(pathmap.offsetTop + pathmap.clientHeight / 2 < screenbottom) || null
         }
     }
 
@@ -20,7 +20,7 @@
             'https://pp.vk.me/c630431/v630431762/4d8d8/JB5gWRX5C4o.jpg',
             'https://pp.vk.me/c624430/v624430762/43f5b/1F2tOhwr82Y.jpg',
         ]
-        const mainphoto = window.mainphoto
+        const mainphoto = document.getElementById('mainphoto')
         if(mainphoto) mainphoto.src = randomizer(urlmap)
         window.onresize = function onresize() {
             mainphoto.height = mainphoto.width
@@ -55,7 +55,7 @@
 
     {
         const body = document.body
-        const logo = window.logo
+        const logo = document.getElementById('logo')
         if(logo) {
             logo.onmouseover = () => body.classList.add('preview')
             logo.onmouseout = () => body.classList.remove('preview')
