@@ -31,6 +31,7 @@
     {
         const stylenode = document.createElement('style')
         const urlmap = [
+            // показывать свободную в текущий момент комнату (с бронекнопкой)
             'https://pp.vk.me/c630431/v630431762/4d6ba/H8uH_TMSVrA.jpg',
             'https://pp.vk.me/c630119/v630119762/4f88b/HuiiHuD7hdY.jpg',
             'https://pp.vk.me/c630119/v630119762/4f895/KnbZMuCAvPA.jpg',
@@ -47,6 +48,7 @@
             'https://pp.vk.me/c626128/v626128762/3b35d/-pha-dvzI30.jpg',
             'https://pp.vk.me/c631528/v631528762/356a4/w7Ue-lZ8QBA.jpg',
             'https://pp.vk.me/c637322/v637322566/2b247/XW_yTuXt47E.jpg',
+            'https://pp.vk.me/c636417/v636417566/4331e/FDlgAqsNlSU.jpg',
         ]
         const url = randomizer(urlmap)
         stylenode.textContent = `body::before { background-image: url(${ url }) }`
