@@ -1,7 +1,7 @@
 :link,
 :visited
 {
-    color: #88b7db;
+    color: #a8d7fb;
 }
 :link[href^="#"],
 :link:not(:hover):not(:focus),
@@ -321,14 +321,10 @@ body > footer address small time
 
 /*================================================================*/
 
-/*.equipment
-{
-    column-count: 2;
-}*/
 .equipment > div
 {
     display: inline-block;
     vertical-align: top;
-    margin: 0 40px 40px 0;
-    min-width: 500px;
+    margin: 0 50px 25px 0;
+    min-width: 400px;
 }
