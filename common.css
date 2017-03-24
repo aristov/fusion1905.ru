@@ -1,7 +1,12 @@
 :link,
 :visited
 {
-    color: #a8d7fb;
+    color: #98c7eb;
+}
+:link:hover,
+:visited:hover
+{
+    color: white;
 }
 :link[href^="#"],
 :link:not(:hover):not(:focus),
@@ -39,7 +44,6 @@ ul
 {
     list-style: circle;
 }
-
 /*================================================================*/
 
 body::before
@@ -69,7 +73,6 @@ body.preview::before
 {
     opacity: 1;
 }
-
 /*================================================================*/
 
 body > header
@@ -152,7 +155,6 @@ body > header .fa-vk
     margin-bottom: -12px;
     left: 10px;
 }
-
 /*================================================================*/
 
 body > main img#mainphoto
@@ -179,7 +181,6 @@ body > main sup.sqr
     margin: -5px 2px 0;
     display: inline-block;
 }
-
 /*================================================================*/
 
 address.tel
@@ -224,7 +225,6 @@ address.tel ul > li:not(:hover)::first-letter
 {
     color: rgba(255, 255, 255, 0.5);
 }
-
 /*================================================================*/
 
 address.adr
@@ -273,8 +273,6 @@ address.adr #pathmap:not(:hover)
 {
     opacity: 0.3;
 }
-
-
 /*================================================================*/
 
 body > footer
@@ -318,9 +316,33 @@ body > footer address small time
 {
     margin: 0 6px;
 }
-
+.backlink
+{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+    text-decoration: none;
+}
 /*================================================================*/
 
+.equipmentblock
+{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.equipmentlink
+{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+.equipment
+{
+    padding-bottom: 40px;
+}
 .equipment > div
 {
     display: inline-block;
