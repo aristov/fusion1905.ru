@@ -106,7 +106,7 @@ body > header > nav > ul > li
     margin-left: 26px;
     vertical-align: top;
 }
-body > header > nav > ul > li > a[href="#tel"]
+body > header > nav > ul > li > a.tel
 {
     font-size: 30px;
 }
@@ -317,4 +317,18 @@ body > footer address
 body > footer address small time
 {
     margin: 0 6px;
+}
+
+/*================================================================*/
+
+/*.equipment
+{
+    column-count: 2;
+}*/
+.equipment > div
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 40px 40px 0;
+    min-width: 500px;
 }
