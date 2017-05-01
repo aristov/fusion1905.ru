@@ -225,6 +225,10 @@ address.tel ul > li:not(:hover)::first-letter
 {
     color: rgba(255, 255, 255, 0.5);
 }
+address.tel ul > li a[href]
+{
+    text-decoration: none;
+}
 /*================================================================*/
 
 address.adr
@@ -348,5 +352,5 @@ body > footer address small time
     display: inline-block;
     vertical-align: top;
     margin: 0 50px 25px 0;
-    min-width: 400px;
+    min-width: 500px;
 }
