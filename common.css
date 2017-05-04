@@ -103,18 +103,18 @@ body > header > nav > ul:not(:hover)
 {
     opacity: 1;
 }
-body > header > nav > ul > li
+body > header > nav > ul>li
 {
     display: inline-block;
     margin-left: 26px;
     vertical-align: top;
 }
-body > header > nav > ul > li > a.tel
+body > header > nav > ul>li > a.tel
 {
     font-size: 30px;
 }
-body > header > nav > ul > li > :link,
-body > header > nav > ul > li > :visited
+body > header > nav > ul>li > :link,
+body > header > nav > ul>li > :visited
 {
     color: white;
     display: block;
@@ -122,8 +122,8 @@ body > header > nav > ul > li > :visited
     padding: 13px 0 13px 60px;
     line-height: normal;
 }
-body > header > nav > ul > li > :link:not(:hover):not(:focus),
-body > header > nav > ul > li > :visited:not(:hover):not(:focus)
+body > header > nav > ul>li > :link:not(:hover):not(:focus),
+body > header > nav > ul>li > :visited:not(:hover):not(:focus)
 {
     opacity: 0.7;
 }
@@ -147,13 +147,13 @@ body > header .fa-map
     top: 19px;
     left: 19px;
 }
-body > header .fa-vk
+.social .fa
 {
-    color: white;
     font-size: 30px;
-    bottom: 50%;
-    margin-bottom: -12px;
-    left: 10px;
+    margin: 0 30px;
+}
+.social .fa:not(:hover) {
+    color: #888;
 }
 /*================================================================*/
 
@@ -197,35 +197,35 @@ address.tel ul
     padding: 0;
     opacity: 1;
 }
-address.tel ul > li
+address.tel ul>li
 {
     transition: transform 300ms ease 500ms;
     outline: none;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
     letter-spacing: 5px;
 }
-address.tel ul > li > strong
+address.tel ul>li > strong
 {
     font-weight: normal;
 }
-address.tel ul > li:not(:hover)
+address.tel ul>li:not(:hover)
 {
     opacity: 0.75;
 }
-address.tel ul > li:hover
+address.tel ul>li:hover
 {
     transform: scale(1.2, 1.2);
     opacity: 1;
 }
-address.tel ul > li::first-letter
+address.tel ul>li::first-letter
 {
     font-weight: normal;
 }
-address.tel ul > li:not(:hover)::first-letter
+address.tel ul>li:not(:hover)::first-letter
 {
     color: rgba(255, 255, 255, 0.5);
 }
-address.tel ul > li a[href]
+address.tel ul>li a[href]
 {
     text-decoration: none;
 }
@@ -240,7 +240,7 @@ address.adr figure
     margin: 0;
     text-align: center;
 }
-address.adr figure > figcaption a
+address.adr figure>figcaption a
 {
     font-style: normal;
     font-size: 30px;
@@ -250,13 +250,13 @@ address.adr figure > figcaption a
     text-decoration: none;
     transition: transform 300ms ease 500ms;
 }
-address.adr figure > figcaption a:not(:focus):not(:hover)
+address.adr figure>figcaption a:not(:focus):not(:hover)
 {
     color: rgba(174, 203, 157, 1);
     opacity: 0.9;
 }
-address.adr figure > figcaption a:focus,
-address.adr figure > figcaption a:hover
+address.adr figure>figcaption a:focus,
+address.adr figure>figcaption a:hover
 {
     color: white;
     transform: scale(1.2, 1.2);
@@ -279,44 +279,44 @@ address.adr #pathmap:not(:hover)
 }
 /*================================================================*/
 
-body > footer
+body>footer
 {
     display: flex;
     justify-content: space-between;
     padding: 20px 0 20px;
     border-top: 1px dotted rgba(255, 255, 255, 0.15);
 }
-body > footer small
+body>footer small
 {
     font-size: 14px;
 }
-body > footer small:not(:hover)
+body>footer small:not(:hover)
 {
     opacity: 0.7;
 }
-body > footer small.worktime > span
+body>footer small.worktime > span
 {
     margin-right: 30px;
 }
-body > footer small.worktime .fa
+body>footer small.worktime .fa
 {
     margin-right: 10px;
 }
-body > footer small.worktime sup
+body>footer small.worktime sup
 {
     position: absolute;
     margin-top: -4px;
     opacity: 0.7;
 }
-body > footer small.worktime:not(:hover) sup
+body>footer small.worktime:not(:hover) sup
 {
     opacity: 0;
 }
-body > footer address
+body>footer address
 {
     font-style: normal;
 }
-body > footer address small time
+body>footer address small time
 {
     margin: 0 6px;
 }
